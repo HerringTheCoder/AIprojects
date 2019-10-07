@@ -1,0 +1,18 @@
+﻿<Window x:Class="Pick_an_RPG.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pick_an_RPG"
+        mc:Ignorable="d"
+        Title="Window1" Height="400" Width="700" Background="black">
+    <Grid>
+        <Button HorizontalAlignment="Left" Margin="25,0,0,0" Height="300" Width="300" Background="Green" x:Name="LeftBtn" Click="LeftBtn_Click">
+            <Image Height="256" Width="256" Source="images/single user.png" Stretch="Fill" x:Name="LeftImg" />
+        </Button>
+        <Button HorizontalAlignment="Right"  Margin="0,0,25,0" Height="300" Width="300" Background="Blue" x:Name="RightBtn" Click="RightBtn_Click">
+            <Image Height="256" Source="images/multiple users.png" Stretch="Fill" Width="256" x:Name="RightImg"/>
+
+        </Button>
+    </Grid>
+</Window>
