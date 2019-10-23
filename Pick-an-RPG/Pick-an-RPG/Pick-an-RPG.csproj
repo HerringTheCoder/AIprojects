@@ -70,10 +70,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Cover.xaml.cs">
+      <DependentUpon>Cover.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tree.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="Cover.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -150,6 +157,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\covers\Borderlands_II.jpg" />
+    <Resource Include="images\covers\Dark_Souls.jpg" />
+    <Resource Include="images\covers\Diablo_II.jpg" />
+    <Resource Include="images\covers\Fallout_2.jpg" />
+    <Resource Include="images\covers\Fallout_76.jpg" />
+    <Resource Include="images\covers\Fallout_New_Vegas.jpg" />
+    <Resource Include="images\covers\Final_Fantasy_VII.jpg" />
+    <Resource Include="images\covers\Final_Fantasy_XV.jpg" />
+    <Resource Include="images\covers\Guild_Wars_2.jpg" />
+    <Resource Include="images\covers\Heroes_III.jpg" />
+    <Resource Include="images\covers\Lost_Sector.jpg" />
+    <Resource Include="images\covers\Mass_Effect.jpg" />
+    <Resource Include="images\covers\Path_of_Exile.jpg" />
+    <Resource Include="images\covers\Planescape_Torment.jpg" />
+    <Resource Include="images\covers\XCOM_2.jpg" />
+    <Resource Include="images\covers\XCOM_Enemy_Unknown.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,9 +10,9 @@ namespace Pick_an_RPG
         public string Result()
         {
             int decResult=0;
-            for (int i = 0; i > Branch.Count; i++)
+            for (int i = 1; i <= Branch.Count; i++)
             {
-                decResult = +Convert.ToInt32(Branch[i - 1]) * Convert.ToInt32(Math.Pow(2, i));
+                decResult = decResult + (Convert.ToInt32(Branch[Branch.Count - i]) * Convert.ToInt32(Math.Pow(2, i-1)) );
             }
             return FindGame(decResult);
         }
@@ -22,44 +22,43 @@ namespace Pick_an_RPG
             switch(result)
             {
                 case 0:
-                    return "";
+                    return "Final_Fantasy_VII.jpg";
                 case 1:
-                  return "";
+                  return "Planescape_Torment.jpg";
                 case 2:
-                  return "";
+                  return "Fallout_2.jpg";
                 case 3:
-                    return "";
+                    return "XCOM_2.jpg";
                 case 4:
-                    return "";
+                    return "Final_Fantasy_XV.jpg";
                 case 5:
-                    return "";
+                    return "Dark_Souls.jpg";
                 case 6:
-                    return "";
+                    return "Fallout_New_Vegas.jpg";
                 case 7:
-                    return "";
+                    return "Mass_Effect.jpg";
                 case 8:
-                    return "";
+                    return "Heroes_III.jpg";
                 case 9:
-                    return "";
+                    return "Path_of_Exile.jpg";
                 case 10:
-                    return "";
+                    return "Lost_Sector.jpg";
                 case 11:
-                    return "";
+                    return "XCOM_Enemy_Unknown.jpg";
                 case 12:
-                    return "";
+                    return "Guild_Wars_2.jpg";
                 case 13:
-                    return "";
+                    return "Diablo_II.jpg";
                 case 14:
-                    return "";
+                    return "Borderlands_II.jpg";
                 case 15:
-                    return "";
-                case 16:
-                    return "";
+                    return "Fallout_76.jpg";
                 default:
                     return "Error";
             }
+
             
         }
-
+        
     }
 }

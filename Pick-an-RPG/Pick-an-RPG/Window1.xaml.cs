@@ -46,8 +46,8 @@ namespace Pick_an_RPG
             switch (StepCounter)
             {
                 case 1:
-                    LeftImg.Source = new BitmapImage(new Uri(@"/images/action.png", UriKind.Relative));
-                    RightImg.Source = new BitmapImage(new Uri(@"/images/dice.png", UriKind.Relative));
+                    LeftImg.Source = new BitmapImage(new Uri(@"/images/dice.png", UriKind.Relative));
+                    RightImg.Source = new BitmapImage(new Uri(@"/images/action.png", UriKind.Relative));
                     break;
                 case 2:
                     LeftImg.Source = new BitmapImage(new Uri(@"/images/drake.png", UriKind.Relative));
@@ -55,8 +55,8 @@ namespace Pick_an_RPG
                     break;
                 case 3:
                     if (MyTree.Branch[2] == true) { 
-                    LeftImg.Source = new BitmapImage(new Uri(@"/images/postapo.png", UriKind.Relative));
-                        RightImg.Source = new BitmapImage(new Uri(@"/images/cosmos.png", UriKind.Relative));
+                    LeftImg.Source = new BitmapImage(new Uri(@"/images/cosmos.png", UriKind.Relative));
+                     RightImg.Source = new BitmapImage(new Uri(@"/images/postapo.png", UriKind.Relative));
                     }
                     else
                     {
@@ -64,11 +64,20 @@ namespace Pick_an_RPG
                         RightImg.Source = new BitmapImage(new Uri(@"/images/dark.png", UriKind.Relative));
                     }
                     break;
-
+                case 4:
+                    ShowCover();
+                    break;
                 default:
                     break;
             }
             StepCounter++;
+        }
+
+        private void ShowCover()
+        {
+            var cover1 = new Cover(MyTree.Result());
+           cover1.LoadCover();
+            cover1.Show();
         }
     }
 }
