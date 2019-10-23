@@ -25,6 +25,7 @@ namespace Pick_an_RPG
         {
             InitializeComponent();
             this.MyTree = MyTree;
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
 
         private void LeftBtn_Click(object sender, RoutedEventArgs e)

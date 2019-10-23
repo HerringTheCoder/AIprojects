@@ -23,6 +23,7 @@ namespace Pick_an_RPG
         public MainWindow()
         {
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
 
         private void StartBtn_Click(object sender, RoutedEventArgs e)

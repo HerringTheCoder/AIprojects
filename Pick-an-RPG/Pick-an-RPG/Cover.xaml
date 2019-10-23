@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pick_an_RPG"
         mc:Ignorable="d"
-        Title="Window2" Height="424" Width="477">
+        Title="Result" Height="424" Width="477">
     <Grid Background="Black">
         <Image Height="314" Source="images/covers/Final_Fantasy_VII.jpg" Stretch="Fill" Width="224" x:Name="CoverImg"/>
     </Grid>

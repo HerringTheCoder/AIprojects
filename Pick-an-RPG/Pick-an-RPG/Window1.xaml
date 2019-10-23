@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pick_an_RPG"
         mc:Ignorable="d"
-        Title="Window1" Height="400" Width="700" Background="black">
+        Title="Category" Height="400" Width="700" Background="black">
     <Grid>
         <Button HorizontalAlignment="Left" Margin="25,0,0,0" Height="300" Width="300" Background="Green" x:Name="LeftBtn" Click="LeftBtn_Click">
             <Image Height="256" Width="256" Source="images/single user.png" Stretch="Fill" x:Name="LeftImg" />

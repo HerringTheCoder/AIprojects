@@ -24,6 +24,7 @@ namespace Pick_an_RPG
         public Cover(string result)
         {
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             this.CoverPath = result;
 
         }

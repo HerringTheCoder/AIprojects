@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pick_an_RPG"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="650">
+        Title="Pick RPG" Height="400" Width="650">
     <Grid>
         <Button x:Name="StartBtn" Click="StartBtn_Click">
             <Image Source="images/logo.png" Stretch="Fill" Height="313" Width="548"/>
