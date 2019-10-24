@@ -26,25 +26,25 @@ namespace Pick_an_RPG
                 case 1:
                   return "Planescape_Torment.jpg";
                 case 2:
-                  return "Fallout_2.jpg";
+                    return "XCOM_2.jpg";                    
                 case 3:
-                    return "XCOM_2.jpg";
+                    return "Fallout_2.jpg";
                 case 4:
                     return "Final_Fantasy_XV.jpg";
                 case 5:
                     return "Dark_Souls.jpg";
                 case 6:
-                    return "Fallout_New_Vegas.jpg";
-                case 7:
                     return "Mass_Effect.jpg";
+                case 7:
+                    return "Fallout_New_Vegas.jpg";                    
                 case 8:
                     return "Heroes_III.jpg";
                 case 9:
                     return "Path_of_Exile.jpg";
                 case 10:
-                    return "Lost_Sector.jpg";
-                case 11:
                     return "XCOM_Enemy_Unknown.jpg";
+                case 11:
+                    return "Lost_Sector.jpg";                    
                 case 12:
                     return "Guild_Wars_2.jpg";
                 case 13:

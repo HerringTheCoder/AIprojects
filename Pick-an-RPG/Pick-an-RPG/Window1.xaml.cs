@@ -66,6 +66,7 @@ namespace Pick_an_RPG
                     }
                     break;
                 case 4:
+                    this.Close();
                     ShowCover();
                     break;
                 default:
