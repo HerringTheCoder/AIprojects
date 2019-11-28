@@ -1,0 +1,95 @@
+﻿<Window x:Class="DeathTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeathTimer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Input -->
+        <StackPanel Grid.Column="0">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Label Content="Płeć" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <ComboBox Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Width="100">
+                    <ComboBoxItem>M</ComboBoxItem>
+                    <ComboBoxItem>K</ComboBoxItem>
+                </ComboBox>
+                
+                <Label Content="Wiek" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <TextBox Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Width="100"></TextBox>
+                
+                <Label Content="Wzrost" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <TextBox Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" Width="100"></TextBox>
+                
+                <Label Content="Waga" Grid.Column="0" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <TextBox Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" Width="100"></TextBox>
+                
+                <Label Content="Poziom stresu" Grid.Column="0" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <ComboBox SelectedIndex="1" Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" Width="100">
+                    <ComboBoxItem>
+                     Niski   
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                       Optymalny
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        Wysoki
+                    </ComboBoxItem>
+                </ComboBox>
+
+                <Label Content="Kaloryczność diety" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <ComboBox SelectedIndex="1" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Width="100">
+                    <ComboBoxItem>Wysoka</ComboBoxItem>
+                    <ComboBoxItem>Średnia</ComboBoxItem>
+                    <ComboBoxItem>Niska</ComboBoxItem>
+                </ComboBox>
+                
+                <Label Content="Spożycie alkoholu" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <ComboBox SelectedIndex="2" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Width="100">
+                    <ComboBox.ToolTip>
+                        <ToolTip>Test tooltipa</ToolTip>
+                    </ComboBox.ToolTip>
+                    <ComboBoxItem>Wysokie</ComboBoxItem>
+                <ComboBoxItem>Średnie</ComboBoxItem>
+                <ComboBoxItem>Niskie/brak</ComboBoxItem>
+                </ComboBox>
+                
+                <Label Content="Palenie papierosów" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+
+                <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Width="100"></TextBox>
+                
+                <Label Content="Tryb pracy" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Width="100"></TextBox>
+                
+                <Label Content="Aktywność" Grid.Column="1" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+                <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Width="100"></TextBox>
+            </Grid>
+            
+        </StackPanel>
+        <!-- Output -->
+        <StackPanel Grid.Column="1" Margin="10,150,10,0">
+        <Label  Content="Przeżyjesz"/>
+            <TextBox IsEnabled="False"></TextBox>
+            <Label Content="Zostało ci"/>
+            <TextBox IsEnabled="False"></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

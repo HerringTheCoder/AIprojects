@@ -1,0 +1,15 @@
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\bin\Debug\DeathTimer.exe.config
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\bin\Debug\DeathTimer.exe
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\bin\Debug\DeathTimer.pdb
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.csprojAssemblyReference.cache
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\MainWindow.g.cs
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\App.g.cs
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer_MarkupCompile.cache
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer_MarkupCompile.lref
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\MainWindow.baml
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.g.resources
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.Properties.Resources.resources
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.csproj.GenerateResource.cache
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.csproj.CoreCompileInputs.cache
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.exe
+C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.pdb
