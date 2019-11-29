@@ -35,28 +35,99 @@ namespace DeathTimer.ViewModels
         }
 
         private string _height;        
-        public string Height { get; set; }
+        public string Height
+        {
+            get { return _height; }
+            set
+            {
+                _height = value;
+                OnPropertyChanged("Height");
+                Console.WriteLine(Height);
+            }
+        }
 
         private string _weight;
-        public string Weight { get; set; }
+        public string Weight
+        {
+            get { return _weight; }
+            set
+            {
+                _weight = value;
+                OnPropertyChanged("Weight");
+                Console.WriteLine(Weight);
+            }
+        }
 
         private string _stress;
-        public string Stress { get; set; }
-
+        public string Stress
+        {
+            get { return _stress; }
+            set
+            {
+                _stress = value;
+                OnPropertyChanged("Stress");
+                Console.WriteLine(Stress);
+            }
+        }
         private string _calories;
-        public string Calories { get; set; }
+        public string Calories
+        {
+            get { return _calories; }
+            set
+            {
+                _calories = value;
+                OnPropertyChanged("Calories");
+                Console.WriteLine(Calories);
+            }
+        }
 
         private string _alcohol;
-        public string Alcohol { get; set; }
+        public string Alcohol
+        {
+            get { return _alcohol; }
+            set
+            {
+                _alcohol = value;
+                OnPropertyChanged("Alcohol");
+                Console.WriteLine(Alcohol);
+            }
+        }
 
         private string _cigarettes;
-        public string Cigarettes { get; set; }
+        public string Cigarettes
+        {
+            get { return _cigarettes; }
+            set
+            {
+                _cigarettes = value;
+                OnPropertyChanged("Cigarettes");
+                Console.WriteLine(Cigarettes);
+            }
+        }
 
         private string _job;
-        public float Job { get; set; }
+        public string Job
+        {
+            get { return _job; }
+            set
+            {
+                _job = value;
+                OnPropertyChanged("Job");
+                Console.WriteLine(Job);
+            }
+        }
 
         private string _activity;
-        public string Activity { get; set; }
+        public string Activity
+        {
+            get { return _activity; }
+            set
+            {
+                _activity = value;
+                OnPropertyChanged("Activity");
+                Console.WriteLine(Activity);
+            }
+        }
 
         public InputViewModel()
         {           

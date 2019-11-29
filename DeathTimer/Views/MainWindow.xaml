@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DeathTimer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="500">
+        Title="MainWindow" Height="450" Width="500" Background="SlateGray">
     
         <Window.Resources>
             <!-- Style-->
@@ -20,9 +20,6 @@
         <Style TargetType="ComboBox">
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Width" Value="100"/>
-        </Style>
-        <Style TargetType="Window">
-            <Setter Property="Background" Value="LightSeaGreen"/>
         </Style>
     </Window.Resources>
     
@@ -62,15 +59,15 @@
 
                 <!-- Wzrost -->
                 <Label Content="Wzrost" Grid.Column="0" Grid.Row="2"></Label>
-                <TextBox Grid.Column="0" Grid.Row="2" ></TextBox>
+                <TextBox Text="{Binding Path=Height, Mode=OneWayToSource,UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="2" ></TextBox>
 
                 <!-- Waga -->
                 <Label Content="Waga" Grid.Column="0" Grid.Row="3" ></Label>
-                <TextBox Grid.Column="0" Grid.Row="3"></TextBox>
+                <TextBox Text="{Binding Path=Weight, Mode=OneWayToSource,UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="3"></TextBox>
 
                 <!-- Poziom stresu -->
                 <Label Content="Poziom stresu" Grid.Column="0" Grid.Row="4" ></Label>
-                <ComboBox SelectedIndex="1" Grid.Column="0" Grid.Row="4">
+                <ComboBox Text="{Binding Path=Stress, Mode=OneWayToSource}" SelectedIndex="1" Grid.Column="0" Grid.Row="4">
                     <ComboBoxItem>Niski</ComboBoxItem>
                     <ComboBoxItem>Przeciętny</ComboBoxItem>
                     <ComboBoxItem>Wysoki</ComboBoxItem>
@@ -78,7 +75,7 @@
 
                 <!-- Kaloryczność diety -->
                 <Label Content="Kaloryczność diety" Grid.Column="1" Grid.Row="0" ></Label>
-                <ComboBox SelectedIndex="1" Grid.Column="1" Grid.Row="0">
+                <ComboBox Text="{Binding Path=Calories, Mode=OneWayToSource}" SelectedIndex="1" Grid.Column="1" Grid.Row="0">
                     <ComboBoxItem>Wysoka</ComboBoxItem>
                     <ComboBoxItem>Średnia</ComboBoxItem>
                     <ComboBoxItem>Niska</ComboBoxItem>
@@ -86,7 +83,7 @@
 
                 <!-- Spożycie alkoholu -->
                 <Label Content="Spożycie alkoholu" Grid.Column="1" Grid.Row="1" ></Label>
-                <ComboBox SelectedIndex="2" Grid.Column="1" Grid.Row="1">
+                <ComboBox Text="{Binding Path=Alcohol, Mode=OneWayToSource}" SelectedIndex="2" Grid.Column="1" Grid.Row="1">
                     <ComboBox.ToolTip>
                         <ToolTip>Test tooltip</ToolTip>
                     </ComboBox.ToolTip>
@@ -97,7 +94,7 @@
 
                 <!-- Palenie papierosów -->
                 <Label Content="Palenie papierosów" Grid.Column="1" Grid.Row="2"></Label>
-                <ComboBox SelectedIndex="0" Grid.Column="1" Grid.Row="2">
+                <ComboBox Text="{Binding Path=Cigarettes, Mode=OneWayToSource}" SelectedIndex="0" Grid.Column="1" Grid.Row="2">
                     <ComboBoxItem>?</ComboBoxItem>
                     <ComboBoxItem>??</ComboBoxItem>
                     <ComboBoxItem>???</ComboBoxItem>
@@ -105,7 +102,7 @@
 
                 <!--Forma pracy-->
                 <Label Content="Forma pracy" Grid.Column="1" Grid.Row="3"></Label>
-                <ComboBox SelectedIndex="0" Grid.Column="1" Grid.Row="3">
+                <ComboBox Text="{Binding Path=Job, Mode=OneWayToSource}" SelectedIndex="0" Grid.Column="1" Grid.Row="3">
                     <ComboBoxItem>Mieszana</ComboBoxItem>
                     <ComboBoxItem>Fizyczna</ComboBoxItem>
                     <ComboBoxItem>Biurowa</ComboBoxItem>
@@ -113,7 +110,7 @@
 
                 <!--Aktywność-->
                 <Label Content="Aktywność" Grid.Column="1" Grid.Row="4"></Label>
-                <ComboBox SelectedIndex="0" Grid.Column="1" Grid.Row="4">
+                <ComboBox Text="{Binding Path=Activity, Mode=OneWayToSource}" SelectedIndex="0" Grid.Column="1" Grid.Row="4">
                     <ComboBoxItem>Niska</ComboBoxItem>
                     <ComboBoxItem>Przeciętna</ComboBoxItem>
                     <ComboBoxItem>Wysoka</ComboBoxItem>
