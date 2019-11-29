@@ -10,7 +10,32 @@ namespace DeathTimer.ViewModels
 {
     class InputViewModel : BaseViewModel
     {
-       
+        public Converter MyConverter = new Converter();
+
+        private double _output;
+        public double Output
+        {
+            get { return _output; }
+            set
+            {
+                _output = value;
+                OnPropertyChanged("Output");
+                Console.WriteLine("Output is equal {0}", value);
+            }
+        }
+
+        private int _outputLeft;
+       public int OutputLeft
+        {
+            get { return _outputLeft; }
+            set {
+                _outputLeft = value;
+                OnPropertyChanged("OutputLeft");
+                Console.WriteLine("Time left: {0}", value);
+            }
+        }
+
+
         private string _gender;
         public string Gender { 
             get { return _gender; }
@@ -19,42 +44,61 @@ namespace DeathTimer.ViewModels
                _gender = value;
                 // Call OnPropertyChanged whenever the property is updated
                 OnPropertyChanged("Gender");
-                Console.WriteLine(Gender);
-
+                Console.WriteLine("Gender is equal {0}",value);
+                MyConverter.ConvertGender(value);
+                Refresh();
             }
             }
-        private string _age;
-        public string Age {
+        private string _age = "25";
+        public string Age
+        {
             get { return _age; }
             set
             {
+                if (string.IsNullOrEmpty(value) || value.Any(x => char.IsLetter(x)))
+                {
+                    value = "0";
+                }
                 _age = value;
                 OnPropertyChanged("Age");
-                Console.WriteLine(Age);
+                Console.WriteLine("Age is equal {0}", value);
+                Refresh();
             }
         }
 
-        private string _height;        
+        private string _height = "170";        
         public string Height
         {
             get { return _height; }
             set
             {
-                _height = value;
+                if ( string.IsNullOrEmpty(value) || value.Any(x => char.IsLetter(x)) )
+                {
+                    value = "130";
+                }                          
+                    _height = value;                
                 OnPropertyChanged("Height");
-                Console.WriteLine(Height);
+                Console.WriteLine("Height is equal {0}", value);
+                MyConverter.ConvertBMI(Weight, Height);
+                Refresh();
             }
         }
 
-        private string _weight;
+        private string _weight = "70";
         public string Weight
         {
             get { return _weight; }
             set
             {
+                if (string.IsNullOrEmpty(value) || value.Any(x => char.IsLetter(x)))
+                {
+                    value = "70";
+                }
                 _weight = value;
                 OnPropertyChanged("Weight");
-                Console.WriteLine(Weight);
+                Console.WriteLine("Weight is equal {0}", value);
+                MyConverter.ConvertBMI(Weight, Height);
+                Refresh();
             }
         }
 
@@ -66,7 +110,9 @@ namespace DeathTimer.ViewModels
             {
                 _stress = value;
                 OnPropertyChanged("Stress");
-                Console.WriteLine(Stress);
+                Console.WriteLine("Stress is equal {0}", value);
+                MyConverter.ConvertStress(value);
+                Refresh();
             }
         }
         private string _calories;
@@ -77,7 +123,9 @@ namespace DeathTimer.ViewModels
             {
                 _calories = value;
                 OnPropertyChanged("Calories");
-                Console.WriteLine(Calories);
+                Console.WriteLine("Calories is equal {0}", value);
+                MyConverter.ConvertCalories(Calories);
+                Refresh();
             }
         }
 
@@ -89,7 +137,9 @@ namespace DeathTimer.ViewModels
             {
                 _alcohol = value;
                 OnPropertyChanged("Alcohol");
-                Console.WriteLine(Alcohol);
+                Console.WriteLine("Alcohol is equal {0}", value);
+                MyConverter.ConvertAlcohol(Alcohol);
+                Refresh();
             }
         }
 
@@ -101,7 +151,9 @@ namespace DeathTimer.ViewModels
             {
                 _cigarettes = value;
                 OnPropertyChanged("Cigarettes");
-                Console.WriteLine(Cigarettes);
+                Console.WriteLine("Cigarettes is equal {0}", value);
+                MyConverter.ConvertCigarettes(value);
+                Refresh();
             }
         }
 
@@ -113,7 +165,9 @@ namespace DeathTimer.ViewModels
             {
                 _job = value;
                 OnPropertyChanged("Job");
-                Console.WriteLine(Job);
+                Console.WriteLine("Job is equal {0}", value);
+                MyConverter.ConvertJob(value);
+                Refresh();
             }
         }
 
@@ -125,12 +179,19 @@ namespace DeathTimer.ViewModels
             {
                 _activity = value;
                 OnPropertyChanged("Activity");
-                Console.WriteLine(Activity);
+                Console.WriteLine("Activity is equal {0}", value);
+                MyConverter.ConvertActivity(value);
+                Refresh();
             }
         }
-
+        private void Refresh()
+        {
+            Output = MyConverter.Calculate();
+            OutputLeft = (int)Output - Int32.Parse(Age);
+        }
         public InputViewModel()
-        {           
+        {
+            Output = MyConverter.Calculate();
         }
 
        
