@@ -13,3 +13,17 @@ C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.csproj.G
 C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.csproj.CoreCompileInputs.cache
 C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.exe
 C:\Users\Stacja\source\repos\DeathTimer\DeathTimer\obj\Debug\DeathTimer.pdb
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\App.g.cs
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\DeathTimer_MarkupCompile.cache
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\DeathTimer.exe
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\DeathTimer.pdb
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\bin\Debug\DeathTimer.exe.config
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\bin\Debug\DeathTimer.exe
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\bin\Debug\DeathTimer.pdb
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\DeathTimer_MarkupCompile.lref
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\DeathTimer.g.resources
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\DeathTimer.Properties.Resources.resources
+C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\DeathTimer.csproj.GenerateResource.cache
+C:\Users\Szymon\source\repos\AIprojects\DeathTimer\obj\Debug\DeathTimer.csprojAssemblyReference.cache
+C:\Users\Szymon\source\repos\AIprojects\DeathTimer\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Szymon\source\repos\AIprojects\DeathTimer\obj\Debug\Views\MainWindow.baml
