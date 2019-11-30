@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DeathTimer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="500" Background="SlateGray">
+        Title="Death Timer" Height="450" Width="500" Background="SlateGray">
     
         <Window.Resources>
             <!-- Style-->

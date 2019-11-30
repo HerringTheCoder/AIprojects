@@ -27,3 +27,17 @@ C:\Users\Szymon\Source\Repos\AIprojects\DeathTimer\obj\Debug\DeathTimer.csproj.G
 C:\Users\Szymon\source\repos\AIprojects\DeathTimer\obj\Debug\DeathTimer.csprojAssemblyReference.cache
 C:\Users\Szymon\source\repos\AIprojects\DeathTimer\obj\Debug\Views\MainWindow.g.cs
 C:\Users\Szymon\source\repos\AIprojects\DeathTimer\obj\Debug\Views\MainWindow.baml
+C:\Users\Patryk\Desktop\DeathTimer\bin\Debug\DeathTimer.exe.config
+C:\Users\Patryk\Desktop\DeathTimer\bin\Debug\DeathTimer.exe
+C:\Users\Patryk\Desktop\DeathTimer\bin\Debug\DeathTimer.pdb
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\DeathTimer.csprojAssemblyReference.cache
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\App.g.cs
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\DeathTimer_MarkupCompile.cache
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\DeathTimer_MarkupCompile.lref
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\Views\MainWindow.baml
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\DeathTimer.g.resources
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\DeathTimer.Properties.Resources.resources
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\DeathTimer.csproj.GenerateResource.cache
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\DeathTimer.exe
+C:\Users\Patryk\Desktop\DeathTimer\obj\Debug\DeathTimer.pdb
